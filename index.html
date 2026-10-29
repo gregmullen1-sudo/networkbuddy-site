@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Network Buddy – telecom network design, field survey and work orders</title>
+<meta name="description" content="Network Buddy is a platform for telecom network design, field surveys and work orders, with GIS mapping, CAD drawing tools, a mobile field app and dashboards.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b5cad'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3ENB%3C/text%3E%3C/svg%3E">
+<style>
+  :root{--blue:#0b5cad;--ink:#14212e;--muted:#5a6b7b;--bg:#f5f8fb}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+  header,main,footer{max-width:960px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding-top:20px;padding-bottom:20px}
+  .brand{font-weight:700;font-size:1.2rem;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--blue)}
+  .btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:600}
+  .btn.alt{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+  .hero{padding:48px 0 32px}
+  .hero h1{font-size:2.2rem;line-height:1.2;margin:0 0 16px}
+  .hero p{font-size:1.15rem;color:var(--muted);max-width:680px;margin:0 0 24px}
+  .actions{display:flex;gap:12px;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:32px 0}
+  .card{background:var(--bg);border-radius:12px;padding:20px}
+  .card h3{margin:0 0 8px;font-size:1.05rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  section{margin:40px 0}
+  h2{font-size:1.4rem;margin:0 0 12px}
+  footer{border-top:1px solid #e3e9ef;padding-top:20px;padding-bottom:32px;color:var(--muted);font-size:.9rem}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="/">Network <span>Buddy</span></a>
+  <a class="btn alt" href="https://network-buddy-gis.vercel.app">Sign in</a>
+</header>
+<main>
+  <div class="hero">
+    <h1>Telecom network design, field surveys and work orders in one place</h1>
+    <p>Network Buddy is a software platform for planning and building telecom networks. Design routes on a map, capture survey data in the field, issue and track work orders, and follow progress on dashboards.</p>
+    <div class="actions">
+      <a class="btn" href="https://network-buddy-gis.vercel.app">Open the app</a>
+      <a class="btn alt" href="mailto:greg@networkbuddy.ie">Contact us</a>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>GIS mapping</h3><p>View and edit network assets, routes and survey points on an interactive map.</p></div>
+    <div class="card"><h3>CAD drawing tools</h3><p>Produce and mark up network design drawings alongside the map data.</p></div>
+    <div class="card"><h3>Field app</h3><p>Record surveys, photos and job updates on site from a phone or tablet.</p></div>
+    <div class="card"><h3>Work orders</h3><p>Create, assign and track work orders from design through to completion.</p></div>
+    <div class="card"><h3>Dashboards</h3><p>See project status, survey progress and open work at a glance.</p></div>
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p>Network Buddy is an independent, self-funded product built in Ireland by its founder, Greg Mullen. It is in active development and early testing. The web app is live at <a href="https://network-buddy-gis.vercel.app">network-buddy-gis.vercel.app</a>.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions, demos or early access: <a href="mailto:greg@networkbuddy.ie">greg@networkbuddy.ie</a></p>
+  </section>
+</main>
+<footer>
+  &copy; <span id="y">2026</span> Network Buddy &middot; Ireland &middot; <a href="mailto:greg@networkbuddy.ie">greg@networkbuddy.ie</a>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+</body>
+</html>
